@@ -3,7 +3,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-base64"
-    version="1.0.0">
+    version="1.0.1">
     <name>Base64</name>
     <description>Cordova Base64 Plugin to IOS and Android</description>
     <license>Apache 2.0</license>
@@ -42,7 +42,7 @@
       <source-file src="src/ios/Base64Plugin.m" />
       <header-file src="src/ios/NSData+Base64.h" />
       <source-file src="src/ios/NSData+Base64.m" />
-      
+
   </platform>
 
 </plugin>
