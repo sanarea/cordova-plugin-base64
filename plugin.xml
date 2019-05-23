@@ -14,7 +14,7 @@
     <engines>
         <engine name="cordova" version=">=3.5.0" />
     </engines>
-    
+
     <js-module src="www/Base64.js" name="Base64">
         <clobbers target="Base64" />
     </js-module>
@@ -42,8 +42,7 @@
       <source-file src="src/ios/Base64Plugin.m" />
       <header-file src="src/ios/NSData+Base64.h" />
       <source-file src="src/ios/NSData+Base64.m" />
-
-   </platform>
+      
   </platform>
 
 </plugin>
