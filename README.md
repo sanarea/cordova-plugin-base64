@@ -5,28 +5,24 @@ This Plugin is used to encode base64 of any image, it uses js code for iOS, but 
 
 ## Usage
 
-Example Usage: 
+Example Usage:
 
 ```js
 //filePath is the absolute path to the file(/mnt/sdcard/...)
-window.plugins.Base64.encodeFile(filePath, function(base64){
+window.Base64.encodeFile(filePath, function(base64){
  			console.log('file base64 encoding: ' + base64);
  		});
 ```
 
-## Installation 
+## Installation
 
-for Cordova >= 3.0.0
-
-phonegap local plugin add https://github.com/hazemhagrass/phonegap-base64.git
-
-cordova plugin add https://github.com/hazemhagrass/phonegap-base64.git
 
 for Cordova >= 5.0.0
 
-cordova plugin add com-badrit-base64
+cordova plugin add cordova-plugin-base64
+cordova plugin add https://github.com/horelvis/phonegap-base64.git
 
-This has been successfully tested on Cordova 3.0 to 3.1.
+This has been successfully tested on Cordova 4.0
 
 ## MIT Licence
 

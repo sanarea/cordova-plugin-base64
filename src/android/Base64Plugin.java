@@ -1,14 +1,16 @@
 /**
- * 
+ *
  * Phonegap Base64 plugin
- * 
- * Version 1.0
- * 
+ *
+ * Version 2.0
+ *
  * Hazem Hagrass 2013
  *
+ * Upgrade by horelvis.castillo
+ * year 2019
  */
 
-package com.badrit.Base64;
+package cordova.plugin.Base64;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -37,20 +39,20 @@ public class Base64Plugin extends CordovaPlugin {
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 		if ("encodeFile".equals(action)) {
-			
+
 			try {
-				JSONObject parameters = args.getJSONObject(0);
-				if (parameters != null) {
-					String base64String = encodeFile(parameters.getString("filePath"));
+				String filePath parameters = args.getString(0);
+				if (filePath != null) {
+					String base64String = encodeFile(filePath);
 					callbackContext.success(base64String);
 				}
 			} catch (Exception e) {
 
 			}
-			
+
 			return true;
 		}
-		return false; 
+		return false;
 	}
 
 	private String encodeFile(String filePath) {
@@ -79,13 +81,13 @@ public class Base64Plugin extends CordovaPlugin {
 			FileInputStream fileInputStream = new FileInputStream(imageFile);
 			fileInputStream.read(bytes);
 
-			imgStr = Base64.encodeToString(bytes, Base64.DEFAULT);
-			imgStr = "data:image/*;charset=utf-8;base64," + imgStr;
+			mgStr = Base64.encodeToString(bytes, Base64.NO_WRAP);
+
 		} catch (Exception e) {
 			return imgStr;
 		}
-		return imgStr;		
+		return imgStr;
 	}
-	
+
 
 }
