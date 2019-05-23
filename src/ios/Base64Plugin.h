@@ -8,11 +8,11 @@
 #import <Cordova/CDVPlugin.h>
 #import <objc/runtime.h>
 
-
-
-@interface Base64Plugin :  CDVPlugin{
+@interface Base64Plugin :  CDVPlugin <UIDocumentInteractionControllerDelegate>{
+   NSString *localFile;
 }
 
+@property (nonatomic, strong) UIDocumentInteractionController *dcCtrl;
 @property (copy) NSString* callbackId;
 
 - (void)encodeFile:(CDVInvokedUrlCommand*)command;

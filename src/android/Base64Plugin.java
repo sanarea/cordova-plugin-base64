@@ -10,7 +10,7 @@
  * year 2019
  */
 
-package cordova.plugin.Base64;
+package cordova.plugin.base64;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
