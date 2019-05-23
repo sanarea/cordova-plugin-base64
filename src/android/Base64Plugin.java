@@ -41,7 +41,7 @@ public class Base64Plugin extends CordovaPlugin {
 		if ("encodeFile".equals(action)) {
 
 			try {
-				String filePath parameters = args.getString(0);
+				String filePath = args.getString(0);
 				if (filePath != null) {
 					String base64String = encodeFile(filePath);
 					callbackContext.success(base64String);
@@ -81,7 +81,7 @@ public class Base64Plugin extends CordovaPlugin {
 			FileInputStream fileInputStream = new FileInputStream(imageFile);
 			fileInputStream.read(bytes);
 
-			mgStr = Base64.encodeToString(bytes, Base64.NO_WRAP);
+			imgStr = Base64.encodeToString(bytes, Base64.NO_WRAP);
 
 		} catch (Exception e) {
 			return imgStr;
