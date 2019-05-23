@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-base64",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Cordova Base64 Plugin",
   "cordova": {
     "id": "cordova-plugin-base64",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/horelvis/phonegap-base64"
+    "url": "https://github.com/horelvis/cordova-plugin-base64"
   },
   "keywords": [
     "cordova",
