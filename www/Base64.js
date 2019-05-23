@@ -20,4 +20,4 @@ Base64.prototype.encodeFile = function(filePath, successCallback, errorCallback)
 
 var Base64 = new Base64();
 
-module.exports = Base64;
+window.Base64 = Base64;
