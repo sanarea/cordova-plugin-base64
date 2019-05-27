@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-base64",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cordova Base64 Plugin",
   "cordova": {
     "id": "cordova-plugin-base64",
