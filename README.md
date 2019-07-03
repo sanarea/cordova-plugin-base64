@@ -20,7 +20,7 @@ window.Base64.encodeFile(filePath, function(base64){
 for Cordova >= 5.0.0
 
 cordova plugin add cordova-plugin-base64
-cordova plugin add https://github.com/horelvis/phonegap-base64.git
+cordova plugin add https://github.com/sanarea/phonegap-base64.git
 
 This has been successfully tested on Cordova 4.0
 
